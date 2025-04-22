@@ -40,7 +40,7 @@ cd bobs-corn
 ```bash
 cd bobs-corn-server
 npm install
-npm run dev
+node server.js
 
 ### 3. Start the Frontend
 ```bash
