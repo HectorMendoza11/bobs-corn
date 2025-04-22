@@ -28,6 +28,7 @@ function App() {
       setCornData((prev) => ({ ...prev, [name]: { count: 0, history: [] } }));
       setSelectedClient(name);
       setNewClientName("");
+      setMessage(""); // Clear previous message
     }
   };
 
