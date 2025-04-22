@@ -58,10 +58,10 @@ POST | /api/clients | Add a new client
 ### Folder Structure
 bobs-corn/
 │
-├── bobs-corn-server/     # Express + SQLite backend
+├── bobs-corn-server/     # Node + Express + SQLite backend
 │   └── ...
 │
-├── bobs-corn-client/     # React + Tailwind frontend
+├── bobs-corn-client/     # React + Vite + Tailwind frontend
 │   └── ...
 │
 └── README.md
