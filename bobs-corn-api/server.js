@@ -7,7 +7,7 @@ const PORT = 3000;
 
 app.use(cors());
 app.use(express.json());
-
+// THIS ENDPOINTS CAN BE IMPROVED USING STORE PROCEDURES FOR BETTER SECURITY
 // Create SQLite DB file if not exists
 const db = new sqlite3.Database('./corn.db');
 

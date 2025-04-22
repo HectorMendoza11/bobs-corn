@@ -4,7 +4,7 @@ import axios from "axios";
 interface Purchase {
   timestamp: string;
 }
-
+// THIS COMPONENT CAN BE SPLITED INTO DIFFERENT CHILD COMPONENT BUT FOR FASTER COMPLETITION I DID IT IN THIS WAY
 function App() {
   const [clientOptions, setClientOptions] = useState<string[]>([]);
   const [selectedClient, setSelectedClient] = useState<string>("");
@@ -15,11 +15,6 @@ function App() {
   const [loadingPurchases, setLoadingPurchases] = useState(false);
 
   const currentData = cornData[selectedClient] || { count: 0, history: [] };
-
-  // const dataToDisplay =
-  //   loadingPurchases && cornData[selectedClient]
-  //     ? cornData[selectedClient]
-  //     : currentData;
 
   const handleAddClient = () => {
     const name = newClientName.trim();
